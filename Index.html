@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ett slags spill</title>
+    <!-- Kobler til CSS-filen for stil -->
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Spillcontainer som holder alt spillinnhold -->
+    <div id="game-container">
+        <!-- Hovedinnholdet som viser statistikk, handlinger og logg -->
+        <div id="main-content">
+            <h1>Ett slags spill</h1>
+            <!-- Spillstatistikk: helse, inventar og distanse -->
+            <div id="stats">
+                <p>Helse: <span id="health">100%</span></p>
+                <p>Gjenstandsinventar: <span id="inventory">[Tom, Tom, Tom]</span></p>
+                <p>Distanse tilbakelagt: <span id="distance">0</span></p>
+            </div>
+            <!-- Spillknapper: Trill terning og Neste -->
+            <div id="actions">
+                <button id="roll-dice">Trill terning</button>
+                <button id="next-event" disabled>Neste</button>
+            </div>
+            <!-- Logg for hendelser -->
+            <div id="log">
+                <h2>Hendelseslogg</h2>
+                <ul id="event-log"></ul>
+            </div>
+        </div>
+        <!-- Bildeseksjon for hendelsesbilder -->
+        <div id="image-container">
+            <img id="event-image" src="" alt="Hendelsebilde" style="display: none;">
+        </div>
+    </div>
+    <!-- Kobler til JavaScript-filen for logikk -->
+    <script src="script.js"></script>
+</body>
+</html>
